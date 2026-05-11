@@ -1,0 +1,87 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "search": "Search",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close",
+    "all": "All",
+    "today": "Today",
+    "week": "This Week",
+    "month": "This Month",
+    "custom": "Custom Range"
+  },
+  "nav": {
+    "home": "Home",
+    "records": "Records",
+    "add": "Add",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "transaction": {
+    "money_in": "Money In",
+    "money_out": "Money Out",
+    "transfer": "Transfer",
+    "loan": "Loan",
+    "save_btn": "Save · محفوظ کریں",
+    "select_type": "What happened?",
+    "select_category": "Select category",
+    "amount": "Amount",
+    "note": "Note (optional)",
+    "wallet": "Wallet",
+    "date": "Date",
+    "attach": "Attach Receipt",
+    "success": "Transaction saved!"
+  },
+  "loan": {
+    "title": "Loan",
+    "given": "Loan Given",
+    "received": "Payment Received",
+    "they_owe": "They owe you",
+    "you_owe": "You owe them",
+    "outstanding": "Loan Outstanding",
+    "customer": "Customer",
+    "settle": "Receive Payment",
+    "share_whatsapp": "Share on WhatsApp",
+    "direction_give": "I Gave Loan",
+    "direction_take": "I Took Loan"
+  },
+  "plans": {
+    "title": "Plans",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "save_percent": "Save 17%",
+    "current": "Current Plan",
+    "upgrade": "Upgrade",
+    "recommended": "Recommended",
+    "payment_title": "Send Payment",
+    "screenshot": "Upload Screenshot",
+    "submit": "Submit for Approval",
+    "pending": "Request Received",
+    "activate_hours": "Will activate in 1-24 hours"
+  },
+  "dashboard": {
+    "total_balance": "Total Balance",
+    "today_earning": "Today's Earning",
+    "loan_outstanding": "Loan Outstanding",
+    "recent_transactions": "Recent Transactions",
+    "view_all": "View All Records"
+  },
+  "settings": {
+    "title": "Settings",
+    "shop_profile": "Shop Profile",
+    "wallets": "Wallets",
+    "language": "Language",
+    "subscription": "Subscription",
+    "team": "Team",
+    "categories": "Categories",
+    "security": "Security",
+    "data": "Data"
+  }
+}

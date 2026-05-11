@@ -1,0 +1,87 @@
+{
+  "common": {
+    "save": "محفوظ کریں",
+    "cancel": "منسوخ",
+    "back": "واپس",
+    "next": "اگلا",
+    "loading": "لوڈ ہو رہا ہے...",
+    "search": "تلاش",
+    "add": "شامل کریں",
+    "edit": "ترمیم",
+    "delete": "حذف کریں",
+    "confirm": "تصدیق کریں",
+    "close": "بند کریں",
+    "all": "سب",
+    "today": "آج",
+    "week": "اس ہفتے",
+    "month": "اس مہینے",
+    "custom": "مخصوص تاریخ"
+  },
+  "nav": {
+    "home": "ہوم",
+    "records": "ریکارڈ",
+    "add": "شامل",
+    "reports": "رپورٹ",
+    "settings": "ترتیب"
+  },
+  "transaction": {
+    "money_in": "آمدنی",
+    "money_out": "خرچہ",
+    "transfer": "منتقلی",
+    "loan": "اُدھار",
+    "save_btn": "محفوظ کریں",
+    "select_type": "کیا ہوا؟",
+    "select_category": "قسم منتخب کریں",
+    "amount": "رقم",
+    "note": "نوٹ (اختیاری)",
+    "wallet": "بٹوہ",
+    "date": "تاریخ",
+    "attach": "رسید لگائیں",
+    "success": "محفوظ ہوگیا!"
+  },
+  "loan": {
+    "title": "اُدھار",
+    "given": "اُدھار دیا",
+    "received": "ادائیگی ملی",
+    "they_owe": "لینا ہے",
+    "you_owe": "دینا ہے",
+    "outstanding": "اُدھار باقی",
+    "customer": "گاہک",
+    "settle": "ادائیگی لیں",
+    "share_whatsapp": "واٹس ایپ",
+    "direction_give": "میں نے دیا",
+    "direction_take": "میں نے لیا"
+  },
+  "plans": {
+    "title": "پلان",
+    "monthly": "ماہانہ",
+    "annual": "سالانہ",
+    "save_percent": "17% بچت",
+    "current": "موجودہ پلان",
+    "upgrade": "اپگریڈ",
+    "recommended": "تجویز شدہ",
+    "payment_title": "ادائیگی بھیجیں",
+    "screenshot": "اسکرین شاٹ",
+    "submit": "منظوری کے لیے بھیجیں",
+    "pending": "درخواست موصول",
+    "activate_hours": "1-24 گھنٹوں میں"
+  },
+  "dashboard": {
+    "total_balance": "کل پیسہ",
+    "today_earning": "آج کی کمائی",
+    "loan_outstanding": "اُدھار باقی",
+    "recent_transactions": "حالیہ لین دین",
+    "view_all": "سب ریکارڈ دیکھیں"
+  },
+  "settings": {
+    "title": "ترتیب",
+    "shop_profile": "دکان کی معلومات",
+    "wallets": "بٹوہ",
+    "language": "زبان",
+    "subscription": "سبسکرپشن",
+    "team": "ٹیم",
+    "categories": "اقسام",
+    "security": "سیکیورٹی",
+    "data": "ڈیٹا"
+  }
+}
