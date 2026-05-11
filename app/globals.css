@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0B0F1A;
+  --navy-700: #131929;
+  --teal: #00C4B4;
+  --teal-dark: #00A89A;
+  --income: #4CAF50;
+  --expense: #FF5C5C;
+  --loan: #F59E0B;
+  --surface: #F1F5F9;
+  --card: #ffffff;
+  --border: #D1D5DB;
+  --muted: #64748B;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+}
+
+/* ══════════════════════════════════════════════════
+   THEME VARIABLES  (10 themes)
+   All structural CSS reads from --t-* custom props
+══════════════════════════════════════════════════ */
+
+/* 1 ── Dark Pro (default) */
+:root, [data-theme="dark-pro"] {
+  --t-hero-from:   #0B0F1A;
+  --t-hero-mid:    #131929;
+  --t-hero-to:     #0d1a2e;
+  --t-accent:      #00C4B4;
+  --t-page-bg:     #F1F5F9;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #D1D5DB;
+  --t-text:        #0B0F1A;
+  --t-muted:       #64748B;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(209,213,219,0.70);
+}
+/* 2 ── Light Clean */
+[data-theme="light-clean"] {
+  --t-hero-from:   #1E40AF;
+  --t-hero-mid:    #1d4ed8;
+  --t-hero-to:     #2563EB;
+  --t-accent:      #3B82F6;
+  --t-page-bg:     #EFF6FF;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #BFDBFE;
+  --t-text:        #1E3A8A;
+  --t-muted:       #64748B;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(191,219,254,0.70);
+}
+/* 3 ── Elegant Black Gold */
+[data-theme="black-gold"] {
+  --t-hero-from:   #1A1200;
+  --t-hero-mid:    #110E00;
+  --t-hero-to:     #0D0900;
+  --t-accent:      #D4AF37;
+  --t-page-bg:     #111110;
+  --t-card-bg:     #1C1C18;
+  --t-card-border: #2A2A20;
+  --t-text:        #F5F0DC;
+  --t-muted:       #A8A090;
+  --t-nav-bg:      rgba(28,28,24,0.97);
+  --t-nav-border:  rgba(42,42,32,0.80);
+}
+/* 4 ── Soft Pastel */
+[data-theme="soft-pastel"] {
+  --t-hero-from:   #7C6FAE;
+  --t-hero-mid:    #8B7EC0;
+  --t-hero-to:     #9B8DD0;
+  --t-accent:      #EC8FAC;
+  --t-page-bg:     #FFF5FB;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #F0E6F6;
+  --t-text:        #4A3B5C;
+  --t-muted:       #8B7BA8;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(240,230,246,0.80);
+}
+/* 5 ── Business Blue */
+[data-theme="business-blue"] {
+  --t-hero-from:   #0F2454;
+  --t-hero-mid:    #163070;
+  --t-hero-to:     #1A3A8A;
+  --t-accent:      #1565C0;
+  --t-page-bg:     #F0F4FA;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #C5D4E8;
+  --t-text:        #0F2454;
+  --t-muted:       #546E8A;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(197,212,232,0.70);
+}
+/* 6 ── Green Finance */
+[data-theme="green-finance"] {
+  --t-hero-from:   #1B4332;
+  --t-hero-mid:    #2D6A4F;
+  --t-hero-to:     #1B5E3E;
+  --t-accent:      #16A34A;
+  --t-page-bg:     #F0FDF4;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #BBF7D0;
+  --t-text:        #14532D;
+  --t-muted:       #6B8A72;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(187,247,208,0.70);
+}
+/* 7 ── Warm Beige */
+[data-theme="warm-beige"] {
+  --t-hero-from:   #5C3D2E;
+  --t-hero-mid:    #7A5244;
+  --t-hero-to:     #8B6353;
+  --t-accent:      #C97D4E;
+  --t-page-bg:     #FFF8F0;
+  --t-card-bg:     #FFFBF5;
+  --t-card-border: #E8D5C0;
+  --t-text:        #3D1F0D;
+  --t-muted:       #7D6151;
+  --t-nav-bg:      rgba(255,251,245,0.95);
+  --t-nav-border:  rgba(232,213,192,0.60);
+}
+/* 8 ── High Contrast */
+[data-theme="high-contrast"] {
+  --t-hero-from:   #000000;
+  --t-hero-mid:    #0A0A0A;
+  --t-hero-to:     #141414;
+  --t-accent:      #0000CC;
+  --t-page-bg:     #FFFFFF;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #000000;
+  --t-text:        #000000;
+  --t-muted:       #222222;
+  --t-nav-bg:      rgba(255,255,255,0.99);
+  --t-nav-border:  rgba(0,0,0,0.40);
+}
+/* 9 ── Neon Modern */
+[data-theme="neon-modern"] {
+  --t-hero-from:   #0D0221;
+  --t-hero-mid:    #150330;
+  --t-hero-to:     #1A0433;
+  --t-accent:      #00FF88;
+  --t-page-bg:     #080810;
+  --t-card-bg:     #10101E;
+  --t-card-border: #1E1E35;
+  --t-text:        #E8E8FF;
+  --t-muted:       #9090B8;
+  --t-nav-bg:      rgba(16,16,30,0.97);
+  --t-nav-border:  rgba(30,30,53,0.90);
+}
+/* 10 ── Minimal Gray */
+[data-theme="minimal-gray"] {
+  --t-hero-from:   #374151;
+  --t-hero-mid:    #4B5563;
+  --t-hero-to:     #374151;
+  --t-accent:      #4B5563;
+  --t-page-bg:     #F9FAFB;
+  --t-card-bg:     #FFFFFF;
+  --t-card-border: #E5E7EB;
+  --t-text:        #111827;
+  --t-muted:       #6B7280;
+  --t-nav-bg:      rgba(255,255,255,0.92);
+  --t-nav-border:  rgba(229,231,235,0.70);
+}
+
+@layer base {
+  * { -webkit-tap-highlight-color: transparent; -webkit-font-smoothing: antialiased; box-sizing: border-box; }
+  html { overflow-x: hidden; }
+  body {
+    background-color: var(--t-page-bg, #F1F5F9);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.25s ease;
+  }
+  .font-urdu { font-family: 'Noto Nastaliq Urdu', serif; direction: rtl; }
+}
+
+@layer components {
+  /* Glass morphism */
+  .glass-dark {
+    background: rgba(255,255,255,0.07);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.10);
+  }
+  .glass-dark-strong {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+  .glass-light {
+    background: rgba(255,255,255,0.80);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.9);
+  }
+
+  /* Premium card — theme-aware */
+  .card {
+    @apply rounded-2xl border;
+    background-color: var(--t-card-bg, #FFFFFF);
+    border-color: var(--t-card-border, #D1D5DB);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.10);
+    transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+  .card-lg {
+    @apply rounded-3xl border;
+    background-color: var(--t-card-bg, #FFFFFF);
+    border-color: var(--t-card-border, #D1D5DB);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.07), 0 10px 30px rgba(0,0,0,0.12);
+    transition: background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  /* Theme-aware primary button */
+  .btn-teal {
+    @apply font-bold rounded-2xl;
+    background-color: var(--t-accent, #00C4B4);
+    color: var(--t-hero-from, #0B0F1A);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    transition: all 0.15s ease;
+  }
+  .btn-teal:active { transform: scale(0.97); opacity: 0.9; }
+
+  /* Dark hero button */
+  .btn-navy {
+    @apply text-white font-bold rounded-2xl;
+    background-color: var(--t-hero-from, #0B0F1A);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: all 0.15s ease;
+  }
+  .btn-navy:active { transform: scale(0.97); }
+
+  /* Bottom-nav backdrop — theme-aware */
+  .bottom-nav-backdrop {
+    background: var(--t-nav-bg, rgba(255,255,255,0.90));
+    border-top: 1px solid var(--t-nav-border, rgba(226,232,240,0.60));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    transition: background 0.25s ease;
+  }
+
+  /* Card tap feedback */
+  .card-tap { transition: transform 0.1s ease, box-shadow 0.1s ease; }
+  .card-tap:active { transform: scale(0.975); box-shadow: none; }
+
+  /* Shimmer skeleton */
+  .skeleton {
+    background: linear-gradient(90deg, #D1D5DB 25%, #F1F5F9 50%, #D1D5DB 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Page transition */
+  .page-enter { animation: slideUp 0.25s cubic-bezier(0.16,1,0.3,1); }
+
+  /* Gradient text */
+  .text-gradient-teal {
+    background: linear-gradient(135deg, #00C4B4, #00A89A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Dot indicator */
+  .status-dot { @apply w-2 h-2 rounded-full inline-block; }
+
+  /* Noise texture overlay for depth */
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    border-radius: inherit;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+  .text-balance { text-wrap: balance; }
+  .border-glass { border-color: rgba(255,255,255,0.10); }
+
+  /* Theme-aware hero gradient */
+  .bg-navy-gradient {
+    background: linear-gradient(160deg, var(--t-hero-from, #0B0F1A) 0%, var(--t-hero-mid, #131929) 60%, var(--t-hero-to, #0d1a2e) 100%);
+    transition: background 0.3s ease;
+  }
+
+  /* Fade in animation */
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Premium button glow */
+  .btn-premium-glow {
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 196, 180, 0.3);
+    transition: all 0.3s ease;
+  }
+  .btn-premium-glow:hover {
+    box-shadow: 0 0 30px rgba(0, 196, 180, 0.5), 0 8px 24px rgba(0, 196, 180, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cardSlideIn {
+  from { opacity: 0; transform: translateY(18px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+
+@keyframes borderPulse {
+  0%,100% { box-shadow: 0 0 0 0 transparent; }
+  50%      { box-shadow: 0 0 0 3px rgba(255,255,255,0.08); }
+}
+
+/* ══════════════════════════════════════════════════
+   UNIVERSAL THEME OVERRIDES
+   Ensures standard Tailwind classes respect theme variables
+══════════════════════════════════════════════════ */
+[data-theme] .text-navy { color: var(--t-text) !important; }
+[data-theme] .text-muted { color: var(--t-muted) !important; }
+[data-theme] .bg-surface { background-color: var(--t-page-bg) !important; }
+[data-theme] .bg-white { background-color: var(--t-card-bg) !important; }
+[data-theme] .border-border { border-color: var(--t-card-border) !important; }
+[data-theme] input, 
+[data-theme] select, 
+[data-theme] textarea { 
+  color: var(--t-text) !important; 
+  background-color: var(--t-card-bg) !important; 
+  border-color: var(--t-card-border) !important;
+}
+
+/* High contrast: bolder borders */
+[data-theme="high-contrast"] .card,
+[data-theme="high-contrast"] .card-lg   { border-width: 2px; box-shadow: none; }
+[data-theme="high-contrast"] .text-muted { color: #222222 !important; }
+
+/* ══════════════════════════════════════════════════
+   DESKTOP RESPONSIVE LAYOUT
+══════════════════════════════════════════════════ */
+
+/* Thin scrollbar for sidebar/panel columns */
+.sidebar-scroll::-webkit-scrollbar { width: 4px; }
+.sidebar-scroll::-webkit-scrollbar-track { background: transparent; }
+.sidebar-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 2px; }
+.sidebar-scroll::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.22); }
+
+.panel-scroll::-webkit-scrollbar { width: 4px; }
+.panel-scroll::-webkit-scrollbar-track { background: transparent; }
+.panel-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.10); border-radius: 2px; }
+.panel-scroll::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.18); }
+
+/* Main content scroll - hidden on mobile, thin on desktop */
+.main-scroll { scrollbar-width: thin; scrollbar-color: rgba(0,0,0,0.08) transparent; }
+.main-scroll::-webkit-scrollbar { width: 6px; }
+.main-scroll::-webkit-scrollbar-track { background: transparent; }
+.main-scroll::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.08); border-radius: 3px; }
+
+/* Responsive bottom padding helper - add to page wrappers */
+.pb-nav { padding-bottom: 88px; }
+@media (min-width: 768px) { .pb-nav { padding-bottom: 0; } }
+
+/* ══════════════════════════════════════════════════
+   ADD TRANSACTION BUTTON PULSE ANIMATION
+   Smooth scale + soft glow - ~2 second cycle
+══════════════════════════════════════════════════ */
+@keyframes pulse-soft {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
+
+/* Enhanced hover glow */
+.animate-pulse-soft:hover {
+  box-shadow: 0 6px 28px rgba(0,196,180,0.55), 0 0 40px rgba(0,196,180,0.25) !important;
+}
